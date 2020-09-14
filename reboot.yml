@@ -5,3 +5,4 @@
    - name: Check the uptime
      shell: uptime
      register: UPTIME_PRE_REBOOT
+   - debug: msg={{UPTIME_PRE_REBOOT.stdout}}
