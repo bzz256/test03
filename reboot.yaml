@@ -1,0 +1,8 @@
+- name: Restart server
+  shell: reboot
+
+- name: Wait for server to restart
+  wait_for:
+    port=22
+    delay=1
+    timeout=300
