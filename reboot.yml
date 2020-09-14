@@ -1,4 +1,6 @@
-- name: Restart server
+---
+- name: Reboot
+  hosts: all
   shell: reboot
 
 - name: Wait for server to restart
