@@ -1,4 +1,4 @@
-f---
+---
 - hosts: all
   become: yes
 
