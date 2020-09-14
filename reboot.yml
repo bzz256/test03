@@ -2,5 +2,6 @@
 - hosts: all
 
   tasks:
-   - name: Unconditionally reboot the machine with all defaults
-     reboot:
+   - name: Check the uptime
+     shell: uptime
+     register: UPTIME_PRE_REBOOT
