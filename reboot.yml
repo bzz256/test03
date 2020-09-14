@@ -4,4 +4,4 @@
 
   tasks:
    - name: Unconditionally reboot the machine with all defaults
-     poweroff:
+     command: /sbin/shutdown -h now
