@@ -1,7 +1,6 @@
 ---
 - name: Reboot
-  hosts: all
-  shell: reboot
+  command: reboot
 
 - name: Wait for server to restart
   wait_for:
